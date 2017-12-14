@@ -1,0 +1,1 @@
+{"file_id": "etc/hosts.cfg","notification_options": ["d","f","r","u"],"max_check_attempts": 5,"notification_period": "24x7","template": "default-host-template","host_name": "host_name","alias": "host_alias","address": "host_address","hostgroups": ["host_group"],"contact_groups": [  "contact_group"],"_CUSTOMVAR": "custom_var"}
