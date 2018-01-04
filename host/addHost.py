@@ -20,3 +20,17 @@ with open("addHost.json") as importFile:
         data.append(json.loads(line))
         print(i['file_id'])
         break
+        #r = requests.post(url + '/config/host/', data=line, verify=False, auth=(user, password), headers={'content-type': 'application/json'})
+        #logger.info('%s', r.headers)
+        #logger.info('%s', r.request)
+        #logger.info('%s', r.text)
+
+        #if save_check < 10:
+        #    save_check += 1
+        #else:
+        #    logger.info('%s', "Saved")
+        #    r = requests.post(url + '/config/change', data=line, verify=False, auth=(user, password))
+        #    save_check = 0
+
+        #if 'str' in line:
+        #    break
