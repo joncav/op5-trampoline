@@ -4,18 +4,19 @@
 
 import json
 import requests
-
+import logging
 
 url = "https://your-op5.com/api"
 user = "user"
-pass = "pass"
+password = "pass"
+save_check = 0
+
+logging.basicConfig(filename="requests.log", level=logging.INFO)
+logger = logging.getLogger('jsonrequests')
+
 data = []
 with open("addHost.json") as importFile:
-   for line in importFile:
-       data.append(json.loads(line))
-       r = requests.post(url + '/config/host/', data=line, verify=False, auth=(user, pass), headers={'content-type': 'application/json'})
-       print r.request
-       print r.text
-       if 'str' in line:
-          break
-
+    for line in importFile:
+        data.append(json.loads(line))
+        print(i['file_id'])
+        break
